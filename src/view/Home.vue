@@ -3,6 +3,7 @@
     <Header>
       <router-link to="/addtask" class="changeLink">Add Task</router-link>
     </Header>
+    <!-- show all task -->
     <ShowTasks :tasks="tasks" />
   </div>
 </template>

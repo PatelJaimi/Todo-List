@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- table for show aa data -->
     <table>
       <tr>
         <th scope="col" colspan="2">Task</th>
@@ -49,6 +50,7 @@ export default {
   name: "Showtask",
   props: ["tasks"],
   mixins: [taskMixins],
+  // foe check box value
   mounted() {
     let i = 0;
     while (i < this.tasks.length) {
@@ -72,10 +74,13 @@ export default {
 
 <style scoped>
 table {
+  padding: 10px 30px;
   width: 70%;
   margin: 30px auto;
   text-align: left;
   color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px #6b21ff;
 }
 table tr th {
   font-weight: 900;

@@ -3,6 +3,7 @@
     <Header>
       <router-link to="/" class="changeLink">Show Task</router-link>
     </Header>
+    <!-- add task form -->
     <TaskForm :addTask="addTask" :task="task" :name="name">
       <h1 slot="title">{{ name }}</h1>
       <span slot="btn">Add task</span>

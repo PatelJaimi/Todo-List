@@ -47,12 +47,18 @@ export default {
     return {};
   },
   methods: {
+    //on submit method
     takeAction() {
+      //submit foe update task
       if (this.name == "Edit Task") {
         this.editTask();
-      } else if (this.name == "Add Task") {
+      }
+      //submit for add task
+      else if (this.name == "Add Task") {
         this.addTask();
-      } else {
+      }
+      //error
+      else {
         this.$router.push("/");
       }
     },
